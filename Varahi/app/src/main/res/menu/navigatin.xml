@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_audio"
+        android:icon="@drawable/audio"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_video"
+        android:icon="@drawable/video"
+
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_bulaten"
+        android:icon="@drawable/bulaten"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_temple"
+        android:icon="@drawable/temple"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_calender"
+        android:icon="@drawable/calender"
+        android:title="" />
+
+</menu>

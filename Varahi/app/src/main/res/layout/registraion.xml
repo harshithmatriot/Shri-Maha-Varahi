@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginLeft="0dp"    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="0dp"
+
+        android:layout_marginRight="0dp"
+
+        android:fontFamily="@font/alfa_slab_one"
+
+        android:paddingTop="5dp"
+
+        android:text="New Registration"
+        android:textAlignment="center"
+        android:textColor="#921D04"
+        android:textSize="25dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/registration"
+        android:layout_marginLeft="20dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="39dp"
+                android:text="Name"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/genderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/name"
+                android:text="Gender"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/dobText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioSex"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="10dp"
+                android:text="DOB"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_below="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="22dp"
+                android:text="Phone"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/phone"
+                android:text="Email ID"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/languageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginTop="13dp"
+                android:paddingRight="10dp"
+                android:layout_below="@+id/confirmPassword"
+                android:text="Language"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/passwordText"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/customborder"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioSex"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/passwordText"
+                android:background="@drawable/customborder"
+                android:drawableRight="@drawable/date"
+                android:hint="dd/mm/yyyy"
+                android:ems="10"
+                android:inputType="date" />
+
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/passwordText"
+                android:layout_below="@+id/date"
+                android:background="@drawable/customborder"
+                android:ems="10"
+                android:inputType="number"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:layout_toRightOf="@+id/passwordText"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="" />
+
+
+
+            <TextView
+                android:id="@+id/passwordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_below="@+id/email"
+                android:paddingRight="10dp"
+                android:text="Password"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/email"
+                android:layout_toRightOf="@+id/passwordText"
+                android:background="@drawable/customborder"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/cpasswordText"
+                android:layout_width="74dp"
+                android:layout_height="39dp"
+                android:layout_below="@+id/password"
+                android:layout_marginTop="13dp"
+                android:paddingRight="0dp"
+                android:text="Confirm Password"
+                android:textColor="#000000" />
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/password"
+                android:layout_toRightOf="@+id/passwordText"
+                android:background="@drawable/customborder"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiolanguage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="158dp"
+                android:layout_marginTop="53dp"
+                android:background="@drawable/button_style"
+
+                android:text="Submit"
+                android:textColor="#FFF" />
+
+            <RadioGroup
+                android:id="@+id/radiolanguage"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/confirmPassword"
+                android:layout_toRightOf="@+id/passwordText"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioEnglish"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password"
+                    android:text="English" />
+
+                <RadioButton
+                    android:id="@+id/radioTamil"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password"
+                    android:layout_alignTop="@+id/radiolanguage"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Tamil" />
+
+                <RadioButton
+                    android:id="@+id/radioKannada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password"
+                    android:layout_toRightOf="@+id/languageText"
+                    android:text="Kannada" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/passwordText"
+                android:layout_below="@+id/name"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/calender"
+                android:layout_width="46dp"
+                android:layout_height="43dp"
+                android:layout_below="@+id/radioSex"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/date"
+
+                app:srcCompat="@drawable/date" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
